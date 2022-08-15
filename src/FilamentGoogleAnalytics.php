@@ -38,7 +38,7 @@ class FilamentGoogleAnalytics
             return 0;
         }
 
-        return (($this->value - $this->previous) / $this->previous) * 100;
+        return intval(($this->value - $this->previous) / $this->previous * 100);
     }
 
     public function trajectoryValue()
